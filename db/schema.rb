@@ -10,14 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200612134458) do
+ActiveRecord::Schema.define(version: 20200612172838) do
 
   create_table "messages", force: :cascade do |t|
     t.string   "title"
     t.string   "message"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.string   "name"
+    t.integer  "weight"
+    t.integer  "temperature"
+    t.integer  "money"
   end
 
 end

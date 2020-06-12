@@ -8,6 +8,9 @@
       <th>Title</th>
       <th>Message</th>
       <th>Name</th>
+      <th>Weight</th>
+      <th>Temperature</th>
+      <th>Money</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,6 +21,9 @@
         <td><%= message.title %></td>
         <td><%= message.message %></td>
         <td><%= message.name %></td>
+        <td><%= message.weight %></td>
+        <td><%= message.temperature %></td>
+        <td><%= message.money %></td>
         <td><%= link_to 'Show', message %></td>
         <td><%= link_to 'Edit', edit_message_path(message) %></td>
         <td><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
